@@ -1,0 +1,29 @@
+{% extends "layouts/base.html" %}
+{% block head %}
+<script src="js/main.js"></script>
+{% endblock %}
+{% block title %}Customer Homepage{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <h3>Welcome {{ name }}</h3>
+                <h4><a href="http://127.0.0.1:5000/logout">Log out</a></h4>
+            </div>
+        </div>
+        <hr>
+        <h3>View</h3>
+        <h4><a href="http://127.0.0.1:5000/staff-flight-view">Flights 🔎</a></h4>
+        <h4><a href="http://127.0.0.1:5000/staff-view-ratings">Ratings ⭐️</a></h4>
+        <h4><a href="http://127.0.0.1:5000/staff-revenue-view">Revenue 📈</a></h4>
+        <h4><a href="http://127.0.0.1:5000/staff-frequent-customers">Frequent Customers</a></h4>
+        <h4><a href="http://127.0.0.1:5000/staff-top-destinations">Top Destinations</a></h4>
+        <br>
+        <h3>Staff Permissions</h3>
+        <h4><a href="http://127.0.0.1:5000/staff-create-flight">Create Flights</a></h4>
+        <h4><a href="http://127.0.0.1:5000/staff-update-flight-status">Change Flight Status</a></h4>
+        <h4><a href="http://127.0.0.1:5000/staff-add-airplane">Add Airplane</a></h4>
+        <h4><a href="http://127.0.0.1:5000/staff-add-airport">Add Airport</a></h4>
+
+    </div>
+{% endblock %}
